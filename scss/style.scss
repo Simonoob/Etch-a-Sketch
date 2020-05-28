@@ -24,6 +24,20 @@ body{
         align-items: flex-start;
         color: $primary-color;
 
+        .button{
+            padding: $small;
+            font-size: $small;
+            width: auto;
+            cursor: pointer;
+            outline: none;
+            margin: $small;
+            margin-bottom: $large;
+            background-color: $secondary-color;
+            border: 1px solid $primary-color;
+            color: $primary-color;
+            border-radius: 5em;
+        }
+
         #label{
             font-size: $small;
             margin: $standard $small;
@@ -80,51 +94,14 @@ body{
             border-radius: 5em;
         }
 
-        #clear-grid{
-            padding: $small;
-            font-size: $small;
-            width: auto;
-            cursor: pointer;
-            outline: none;
-            margin: $small;
-            margin-bottom: $large;
-            background-color: $secondary-color;
-            border: 1px solid $primary-color;
-            color: $primary-color;
-            border-radius: 5em;
-        }
 
         #random-color{
-            padding: $small;
-            font-size: $small;
-            width: auto;
-            cursor: pointer;
-            outline: none;
-            margin: $small;
-            margin-bottom: $large;
-            background-color: $secondary-color;
-            border: 1px solid $primary-color;
-            color: $primary-color;
-            border-radius: 5em;
             transition: background-color 1s ease-in-out;
         }
        
-        #paint-mode{
-            padding: $small;
-            font-size: $small;
-            width: auto;
-            cursor: pointer;
-            outline: none;
-            margin: $small;
-            margin-bottom: $large;
-            background-color: $secondary-color;
-            border: 1px solid $primary-color;
-            color: $primary-color;
-            border-radius: 5em;
-        }
 
         #color{
-            width: 3em;
+            width: 5em;
             height: 3em;
             font-size: $small;
             cursor: pointer;
