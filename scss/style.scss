@@ -1,0 +1,162 @@
+@import "variables";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: $background-color;
+    min-height: 100vh;
+
+    h1{
+        color: $primary-color;
+        text-align: center;
+        margin-top: $small;
+    }
+    
+
+    #options{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: $primary-color;
+
+        #label{
+            font-size: $small;
+            margin: $standard $small;
+            margin-bottom: 0;
+        }
+        
+        #grid-input{
+            font-size: $small;
+            margin: $small;
+            width: 15.85em;
+            background:transparent;
+            color:$primary-color;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid $primary-color;
+        }
+
+        .inactive{
+            margin: 0 $small;
+            border-radius: 5em;
+            padding: $small;
+            background-color: $error;
+            transition: all .5s ease-in-out;
+            opacity: 0;
+            position: relative;
+            top:0rem;
+            text-align: center;
+        }
+
+        .active{
+            position: relative;
+            top:-3rem;
+            margin: 0 $small;
+            border-radius: 5em;
+            padding: $small;
+            background-color: $error;
+            transition: all .5s ease-in-out;
+            opacity: 1;
+            text-align: center;
+            z-index: 1;
+        }
+
+        #submit{
+            padding: $small;
+            font-size: $small;
+            width: auto;
+            cursor: pointer;
+            outline: none;
+            margin: $small;
+            margin-bottom: $large;
+            background-color: rgba(52, 199, 98, 0.5);;
+            border: 1px solid $primary-color;
+            color: $primary-color;
+            border-radius: 5em;
+        }
+
+        #clear-grid{
+            padding: $small;
+            font-size: $small;
+            width: auto;
+            cursor: pointer;
+            outline: none;
+            margin: $small;
+            margin-bottom: $large;
+            background-color: $secondary-color;
+            border: 1px solid $primary-color;
+            color: $primary-color;
+            border-radius: 5em;
+        }
+
+        #random-color{
+            padding: $small;
+            font-size: $small;
+            width: auto;
+            cursor: pointer;
+            outline: none;
+            margin: $small;
+            margin-bottom: $large;
+            background-color: $secondary-color;
+            border: 1px solid $primary-color;
+            color: $primary-color;
+            border-radius: 5em;
+            transition: background-color 1s ease-in-out;
+        }
+       
+        #paint-mode{
+            padding: $small;
+            font-size: $small;
+            width: auto;
+            cursor: pointer;
+            outline: none;
+            margin: $small;
+            margin-bottom: $large;
+            background-color: $secondary-color;
+            border: 1px solid $primary-color;
+            color: $primary-color;
+            border-radius: 5em;
+        }
+
+        #color{
+            width: 3em;
+            height: 3em;
+            font-size: $small;
+            cursor: pointer;
+            outline: none;
+            margin: $small;
+            margin-bottom: $large;
+            background-color: $secondary-color;
+            border: 1px solid $primary-color;
+            position: relative;
+            top:1em;
+        }
+    }
+    :root{
+        --input:0;
+    }
+    .grid-active{
+        width: 30em;
+        height: 30em;
+        margin: 0 auto;
+        border: 2px solid $primary-color;
+        display: grid;
+        grid-template-columns: repeat(var(--input),auto);
+        grid-template-rows: repeat(var(--input),auto);
+        position: relative;
+        top:-5rem;
+    }
+
+    .square{
+        border: 0.1px solid rgba(255,255,255,0.2);
+    }
+
+
+
+    
+}
