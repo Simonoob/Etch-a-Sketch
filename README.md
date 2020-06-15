@@ -1,7 +1,8 @@
 # Etch-aSketch
 A samll desktop project to practice DOM manipulation and CSS properties. Involves heavy interaction between Javascript and the Html document as well as the CSS stylesheet.
 
-![](https://imgflip.com/gif/458caq)
+<img src="https://i.imgflip.com/458caq.gif">
+
 
 Technologies used:
 -HTML
